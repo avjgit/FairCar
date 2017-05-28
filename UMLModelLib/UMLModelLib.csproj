@@ -40,9 +40,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneratedCode\Accident.cs" />
+    <Compile Include="GeneratedCode\AccidentParty.cs" />
+    <Compile Include="GeneratedCode\Advertisement.cs" />
+    <Compile Include="GeneratedCode\Buyer.cs" />
+    <Compile Include="GeneratedCode\Car.cs" />
+    <Compile Include="GeneratedCode\CarTypes.cs" />
+    <Compile Include="GeneratedCode\Contact.cs" />
+    <Compile Include="GeneratedCode\Email.cs" />
+    <Compile Include="GeneratedCode\Employee.cs" />
+    <Compile Include="GeneratedCode\HomeOnWheels.cs" />
+    <Compile Include="GeneratedCode\Inspection.cs" />
     <Compile Include="GeneratedCode\InspectionResult.cs" />
+    <Compile Include="GeneratedCode\InsuranceCase.cs" />
+    <Compile Include="GeneratedCode\InsuranceCaseType.cs" />
+    <Compile Include="GeneratedCode\Insurer.cs" />
+    <Compile Include="GeneratedCode\LegalPerson.cs" />
+    <Compile Include="GeneratedCode\Maintenance.cs" />
+    <Compile Include="GeneratedCode\Motorcycle.cs" />
+    <Compile Include="GeneratedCode\NotTrading.cs" />
+    <Compile Include="GeneratedCode\Offer.cs" />
+    <Compile Include="GeneratedCode\Ownership.cs" />
+    <Compile Include="GeneratedCode\Party.cs" />
+    <Compile Include="GeneratedCode\Person.cs" />
+    <Compile Include="GeneratedCode\Phone.cs" />
+    <Compile Include="GeneratedCode\PhysicalPerson.cs" />
+    <Compile Include="GeneratedCode\Position.cs" />
+    <Compile Include="GeneratedCode\Postal.cs" />
+    <Compile Include="GeneratedCode\Repair.cs" />
+    <Compile Include="GeneratedCode\RepairCause.cs" />
+    <Compile Include="GeneratedCode\Seller.cs" />
+    <Compile Include="GeneratedCode\ServiceCase.cs" />
+    <Compile Include="GeneratedCode\ServiceCenter.cs" />
+    <Compile Include="GeneratedCode\ServiceOperation.cs" />
+    <Compile Include="GeneratedCode\ServiceOperationType.cs" />
+    <Compile Include="GeneratedCode\TradingPlatform.cs" />
+    <Compile Include="GeneratedCode\TruckOrLorry.cs" />
+    <Compile Include="GeneratedCode\Vehicle.cs" />
+    <Compile Include="GeneratedCode\VehicleColors.cs" />
+    <Compile Include="GeneratedCode\VehicleMakers.cs" />
+    <Compile Include="GeneratedCode\VehicleModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

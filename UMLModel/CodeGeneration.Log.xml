@@ -6,15 +6,24 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="High" Text="Code generation or text transformation started." />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Diagnostic" Text="Name = EnumTemplate" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Diagnostic" Text="ProjectPath = ..\UMLModelLib\UMLModelLib.csproj" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
-  <Message Timestamp="2017-05-28T11:12:15" Importance="Medium" Text="UMLModel's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'UMLModel::InspectionResult' -  (Enumeration) " />
-  <Message Timestamp="2017-05-28T11:12:16" Importance="Medium" Text="'UMLModel::InspectionResult' -  (Enumeration) : success (file created) - C:\Users\avjma\Documents\GitHub\FairCar\UMLModelLib\GeneratedCode\InspectionResult.cs" />
-  <Message Timestamp="2017-05-28T11:12:16" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+  <Message Timestamp="2017-05-28T11:44:29" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Diagnostic" Text="ProjectPath = ..\UMLModelLib\UMLModelLib.csproj" />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-05-28T11:44:30" Importance="Medium" Text="UMLModel's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'UMLModel::Contact' -  (Class) " />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Medium" Text="'UMLModel::Contact' -  (Class) : success (file created) - C:\Users\avjma\Documents\GitHub\FairCar\UMLModelLib\GeneratedCode\Contact.cs" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="ProjectPath = ..\UMLModelLib\UMLModelLib.csproj" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Medium" Text="UMLModel's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'UMLModel::Contact' -  (Class) " />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="Diagnostic" Text="'UMLModel::Contact' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-05-28T11:44:31" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
 </Log>
