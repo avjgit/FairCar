@@ -1,11 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="2f207a22-1d61-4110-a1e6-76576f433576" name="ClassAnalysis" linkedPackageId="e774f315-421f-42ca-ade9-ef77c495654d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <ownedCommentsInternal>
-    <comment Id="05efac8e-d057-4c3d-b7d7-664ca74c164a">
-      <elementDefinition Id="5bf340d9-bf00-45eb-9b97-7f4ca2f79ce5" />
-      <body>NB: Inheritance arrow directions are inverted</body>
-    </comment>
-  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="4564ac72-8277-4ff7-b2fd-ec4b163f72ac" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="e83a3513-755f-4276-aa8a-ba2dde12bf82" />
@@ -83,21 +77,9 @@
       <class Id="f4dc6e6e-93bb-4500-a594-443117e6b410" name="Vehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ed15d27d-b026-4bc8-b7c6-3e7ca827b290" />
         <generalsInternal>
-          <generalization Id="e4181d9a-4181-4a33-a83b-74e49f3eba4a" isSubstitutable="false">
-            <classMoniker Id="280dcef4-c45c-473a-aca2-8d0824bf6ba1" LastKnownName="Car" />
-            <elementDefinition Id="d8ada2d8-a93e-46c7-b55c-f6f2244e6813" />
-          </generalization>
-          <generalization Id="9ad53f38-7ab2-48bf-b0f2-d4ba6ef04280" isSubstitutable="false">
-            <classMoniker Id="9490f2c5-869c-405e-99b5-a3548cffa86a" LastKnownName="Motorcycle" />
-            <elementDefinition Id="a6cbdd41-b172-4178-8ab1-ff2ddb7dce9f" />
-          </generalization>
-          <generalization Id="514cf9d2-8951-4fe9-b650-63617f1470e0" isSubstitutable="false">
-            <classMoniker Id="1b1dd4ed-d586-4476-8ede-831946a568ba" LastKnownName="TruckOrLorry" />
-            <elementDefinition Id="79f94c22-ee18-4e96-a617-6626689f6708" />
-          </generalization>
-          <generalization Id="8cedd903-c3b6-4241-81ca-7a1cb4f33dcc" isSubstitutable="false">
-            <classMoniker Id="6814298f-ae8a-4d52-b5a0-04595e78a2ab" LastKnownName="HomeOnWheels" />
-            <elementDefinition Id="a4055b23-15bb-4b5a-8793-1173fe04e76e" />
+          <generalization Id="4fa02127-1625-442c-98f9-dab3d9904997" isSubstitutable="false">
+            <classMoniker Id="ff6a1ce3-f4a8-48d2-a702-8cf7a23a5582" LastKnownName="Party" />
+            <elementDefinition Id="5318cb19-d91f-4baa-b63f-461672d122ad" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -243,25 +225,9 @@
       <class Id="20884208-b841-46a6-a2f6-3433ebd11432" name="Person" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="14331cf5-ce9d-413e-b089-0ac769c55ec1" />
         <generalsInternal>
-          <generalization Id="8f62a757-7b30-44fc-a074-3cdbdcb05c5f" isSubstitutable="false">
-            <classMoniker Id="495058ee-6376-4af4-9ebc-a2e1c651706f" LastKnownName="LegalPerson" />
-            <elementDefinition Id="3df1d5d2-2819-44dc-9be5-63d62a6082ad" />
-          </generalization>
-          <generalization Id="f015a63b-9703-4c3b-9fa0-62c39ad4a582" isSubstitutable="false">
-            <classMoniker Id="045d7bb9-98c7-4db8-ab54-2fb86bae76c2" LastKnownName="PhysicalPerson" />
-            <elementDefinition Id="6f06a3ca-a99a-4a64-8225-a6ba9536afb2" />
-          </generalization>
-          <generalization Id="df9b90d5-2c4e-4032-9353-4962117cd13c" isSubstitutable="false">
-            <classMoniker Id="e6311f9c-7813-48b8-b4e3-0fbdbd0a979b" LastKnownName="Buyer" />
-            <elementDefinition Id="3672d9be-d9a8-48ad-a3d3-750dcd9c75af" />
-          </generalization>
-          <generalization Id="d2a8e6e8-fbc4-4178-8e38-0e4ef9ce04d9" isSubstitutable="false">
-            <classMoniker Id="701a6681-5447-4a64-b8e5-abfcb053663c" LastKnownName="Seller" />
-            <elementDefinition Id="9ad76eed-5b76-48b0-8eb5-f630043f2eca" />
-          </generalization>
-          <generalization Id="01420e7c-03e1-4774-ad95-ad5d55bedad3" isSubstitutable="false">
-            <classMoniker Id="cbc97d6c-d0da-47d9-a63b-63695b716274" LastKnownName="NotTrading" />
-            <elementDefinition Id="a96474ce-a67e-4eca-be72-dff93dcff903" />
+          <generalization Id="f387c8d0-174f-4a57-ade7-d04b12ddc5b2" isSubstitutable="false">
+            <classMoniker Id="ff6a1ce3-f4a8-48d2-a702-8cf7a23a5582" LastKnownName="Party" />
+            <elementDefinition Id="e6377874-b843-4829-81c4-927f4712663f" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -344,6 +310,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="41888453-b26a-40a7-98ab-1236f564b1d1" name="ServiceCenter" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5925e88d-1834-4169-bbc2-4e929a6c7f8a" />
+        <generalsInternal>
+          <generalization Id="ea2ae65a-085c-46eb-b546-af9fc6f5e1e6" isSubstitutable="false">
+            <classMoniker Id="495058ee-6376-4af4-9ebc-a2e1c651706f" LastKnownName="LegalPerson" />
+            <elementDefinition Id="b0c6fb1f-16de-4e7e-8e29-981d92d26614" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="c29af4bc-715b-48af-abb4-c87bc798088c" isDerived="false" sourceEndRoleName="ServiceCenter" targetEndRoleName="ServiceCase" isLeaf="false" isAbstract="false">
             <classMoniker Id="378277e8-4a57-40c6-9b06-31c33bc3ddce" LastKnownName="ServiceCase" />
@@ -415,6 +387,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="096a003f-528b-430d-87d9-300439b500c0" name="Insurer" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c0712c14-1536-4c2c-b2fe-fc5aadd6d4b5" />
+        <generalsInternal>
+          <generalization Id="72fbf9d7-88b0-4e61-b363-c2b5d4808a29" isSubstitutable="false">
+            <classMoniker Id="495058ee-6376-4af4-9ebc-a2e1c651706f" LastKnownName="LegalPerson" />
+            <elementDefinition Id="d2f7a3c0-ad0c-4b00-b7a5-b2a4a919dcee" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="49eba943-0b47-4375-80af-61daeb6a2b88" isDerived="false" sourceEndRoleName="Insurer" targetEndRoleName="InsuranceCase" isLeaf="false" isAbstract="false">
             <classMoniker Id="7cb4a15d-e325-4a9f-9fec-e2a207f725fb" LastKnownName="InsuranceCase" />
@@ -448,16 +426,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="a5fff735-aed5-4ffe-a1df-a5d609743647" name="ServiceOperation" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ee3bd6d0-673e-4aac-b554-3dd4427b0648" />
-        <generalsInternal>
-          <generalization Id="b6915fea-31a5-4f26-9792-31c265300095" isSubstitutable="false">
-            <classMoniker Id="fe4d9d24-c569-454b-acb5-4383b374c2bc" LastKnownName="Maintenance" />
-            <elementDefinition Id="3db5ea64-3b2e-44a5-b974-4164d392b48f" />
-          </generalization>
-          <generalization Id="b8bd2f02-2fb8-406f-a798-2c1f97af64b8" isSubstitutable="false">
-            <classMoniker Id="0ac20ec5-9fc4-4c25-adbe-6485f5dab45d" LastKnownName="Repair" />
-            <elementDefinition Id="e393f850-a4cc-4e50-9139-2f107c16dc1c" />
-          </generalization>
-        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="45b5ff34-4c38-4269-9509-2ee86af93ef7" name="ServiceOperationTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="cb5eed1c-00e9-41ee-9204-39c419d132d9" />
@@ -497,13 +465,9 @@
       <class Id="495058ee-6376-4af4-9ebc-a2e1c651706f" name="LegalPerson" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d9cdfc92-f33a-4e56-a747-38a70721ac97" />
         <generalsInternal>
-          <generalization Id="cf805a5b-5587-4a43-9e40-51adfc6419d0" isSubstitutable="false">
-            <classMoniker Id="41888453-b26a-40a7-98ab-1236f564b1d1" LastKnownName="ServiceCenter" />
-            <elementDefinition Id="d6e9f599-1eda-4522-83bb-3b49edeb2e03" />
-          </generalization>
-          <generalization Id="e8658df8-774f-437b-b273-a27947818bb8" isSubstitutable="false">
-            <classMoniker Id="096a003f-528b-430d-87d9-300439b500c0" LastKnownName="Insurer" />
-            <elementDefinition Id="c5745a8b-09cc-4edf-87b2-bb1c16a4aee3" />
+          <generalization Id="442b1c9a-94b1-402e-853e-4d7b6bd5bf5e" isSubstitutable="false">
+            <classMoniker Id="20884208-b841-46a6-a2f6-3433ebd11432" LastKnownName="Person" />
+            <elementDefinition Id="6af46cf7-8f1e-48a8-b329-ee24186ad1d9" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -539,6 +503,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="045d7bb9-98c7-4db8-ab54-2fb86bae76c2" name="PhysicalPerson" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="637a0a8c-d6f6-44c1-ac12-4e398e5b869b" />
+        <generalsInternal>
+          <generalization Id="cfac3667-331b-4788-b665-2dcd50e0c43e" isSubstitutable="false">
+            <classMoniker Id="20884208-b841-46a6-a2f6-3433ebd11432" LastKnownName="Person" />
+            <elementDefinition Id="bbcae570-0e8a-4390-ac61-9f940e97364a" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="867becab-1fe5-4c9b-99da-12e158fc9021" isDerived="false" sourceEndRoleName="PhysicalPerson" targetEndRoleName="Employee" isLeaf="false" isAbstract="false">
             <classMoniker Id="b9ae3d89-2c8b-4d58-8d8a-5d1fb7084e6a" LastKnownName="Employee" />
@@ -647,20 +617,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="420d80cd-6270-436f-b8d0-d92e1a4fa580" name="Contact" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e2f04e46-610a-4ec5-8d0b-0bd7dd8fe8f3" />
-        <generalsInternal>
-          <generalization Id="d8aec12a-1f7a-471a-9265-7ec349343650" isSubstitutable="false">
-            <classMoniker Id="68fed158-568e-4a5f-9d5a-f3548c39633f" LastKnownName="Postal" />
-            <elementDefinition Id="c0a68133-eb80-490b-9a10-0d8a72055e22" />
-          </generalization>
-          <generalization Id="d1784518-93ff-481a-bef4-6dd0501e9056" isSubstitutable="false">
-            <classMoniker Id="abe570e5-d323-4333-a548-50bf09f49b81" LastKnownName="Email" />
-            <elementDefinition Id="74b70415-468b-4828-89c1-43771aa1c786" />
-          </generalization>
-          <generalization Id="00f4ca38-1397-4c0e-8590-c4849a797f44" isSubstitutable="false">
-            <classMoniker Id="aa2dd7b4-68a9-462f-b781-6347c6e69dbf" LastKnownName="Phone" />
-            <elementDefinition Id="5c318023-a98d-453c-b8ca-8611790ea1cd" />
-          </generalization>
-        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="9d3f0903-b6c7-403b-9a88-120171cbcc8d" name="Value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="a5cc5464-c41c-4f3b-8478-2071eda7f3b1" />
@@ -671,6 +627,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="68fed158-568e-4a5f-9d5a-f3548c39633f" name="Postal" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b58ca7f5-aaab-42e8-8e44-ac87e4b95398" />
+        <generalsInternal>
+          <generalization Id="a2e57ebf-3e43-4a74-9204-e7996ef6a293" isSubstitutable="false">
+            <classMoniker Id="420d80cd-6270-436f-b8d0-d92e1a4fa580" LastKnownName="Contact" />
+            <elementDefinition Id="09ad992e-5c0d-4e9c-bcda-88bf9022dd6d" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="3e097a26-9f3c-47d9-8a83-3f99a46ccb67" name="Country" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2a823977-09fb-4592-bd83-f6a90d8c011a" />
@@ -690,31 +652,67 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="abe570e5-d323-4333-a548-50bf09f49b81" name="Email" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="62259653-3e13-4e9b-9d58-1c273f6d92bc" />
+        <generalsInternal>
+          <generalization Id="1cc713f6-9ec5-47ea-a708-f91a6807d3b9" isSubstitutable="false">
+            <classMoniker Id="420d80cd-6270-436f-b8d0-d92e1a4fa580" LastKnownName="Contact" />
+            <elementDefinition Id="3e8a5c59-abc1-492f-ba26-9ad28922023a" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="aa2dd7b4-68a9-462f-b781-6347c6e69dbf" name="Phone" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d188805c-da34-4b79-9d15-eb2781771080" />
+        <generalsInternal>
+          <generalization Id="7840d2fb-a4ea-4aff-8de4-0086d8f58b42" isSubstitutable="false">
+            <classMoniker Id="420d80cd-6270-436f-b8d0-d92e1a4fa580" LastKnownName="Contact" />
+            <elementDefinition Id="f518a2e8-14e6-4976-9d0b-033acde1757c" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="280dcef4-c45c-473a-aca2-8d0824bf6ba1" name="Car" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e97035c6-3af3-42e2-a1a7-e47c7d1f9241" />
+        <generalsInternal>
+          <generalization Id="a0a872b5-00a1-4f60-b6e0-44d04e3ca6d1" isSubstitutable="false">
+            <classMoniker Id="f4dc6e6e-93bb-4500-a594-443117e6b410" LastKnownName="Vehicle" />
+            <elementDefinition Id="a1831329-dcae-4429-ac79-72905e98af36" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="9490f2c5-869c-405e-99b5-a3548cffa86a" name="Motorcycle" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="cffbc20a-725d-47e9-8268-699f2c7b152a" />
+        <generalsInternal>
+          <generalization Id="9dd3b073-3f2d-4ee7-af81-08e632ff531f" isSubstitutable="false">
+            <classMoniker Id="f4dc6e6e-93bb-4500-a594-443117e6b410" LastKnownName="Vehicle" />
+            <elementDefinition Id="19d8bb5c-303a-491d-a07c-ffff953cc457" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="1b1dd4ed-d586-4476-8ede-831946a568ba" name="TruckOrLorry" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd974892-bf13-4ee2-9fe1-c58bb97668d0" />
+        <generalsInternal>
+          <generalization Id="c70c145c-14f1-4bde-b4c7-50c8f017ff49" isSubstitutable="false">
+            <classMoniker Id="f4dc6e6e-93bb-4500-a594-443117e6b410" LastKnownName="Vehicle" />
+            <elementDefinition Id="5102bdcf-5f1c-42a2-8385-c25ebe5637fa" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="6814298f-ae8a-4d52-b5a0-04595e78a2ab" name="HomeOnWheels" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6139af9d-818b-4be0-b11d-d40bde74d748" />
+        <generalsInternal>
+          <generalization Id="5c1cb4a7-d491-4138-a209-883657eb2a50" isSubstitutable="false">
+            <classMoniker Id="f4dc6e6e-93bb-4500-a594-443117e6b410" LastKnownName="Vehicle" />
+            <elementDefinition Id="2f6c7ed6-ae0c-45d8-9b4c-6b1fe6579fbb" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -739,16 +737,34 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="e6311f9c-7813-48b8-b4e3-0fbdbd0a979b" name="Buyer" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="77ff21dd-aa28-4903-80aa-622687880e74" />
+        <generalsInternal>
+          <generalization Id="6ae6b3ba-2f11-4083-97c4-f5aaf829c96e" isSubstitutable="false">
+            <classMoniker Id="20884208-b841-46a6-a2f6-3433ebd11432" LastKnownName="Person" />
+            <elementDefinition Id="b10377a0-48a2-401d-835e-0fab2a4dbfb5" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="701a6681-5447-4a64-b8e5-abfcb053663c" name="Seller" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="832a7e8d-b84a-4317-af09-6f0e63937872" />
+        <generalsInternal>
+          <generalization Id="3ca17d83-7926-4cbc-ab3b-72f54df52a8c" isSubstitutable="false">
+            <classMoniker Id="20884208-b841-46a6-a2f6-3433ebd11432" LastKnownName="Person" />
+            <elementDefinition Id="d243d768-1395-426c-8e5e-7ea3c4c007c4" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="cbc97d6c-d0da-47d9-a63b-63695b716274" name="NotTrading" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="eb65396a-66b2-4361-8360-46ba0724ea2c" />
+        <generalsInternal>
+          <generalization Id="e17fed70-e003-4609-ada5-23d679cffce0" isSubstitutable="false">
+            <classMoniker Id="20884208-b841-46a6-a2f6-3433ebd11432" LastKnownName="Person" />
+            <elementDefinition Id="8043adae-ec03-4a83-a565-298ec12e6ec8" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -805,16 +821,34 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="fe4d9d24-c569-454b-acb5-4383b374c2bc" name="Maintenance" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7e8afd56-131f-4ba9-8cb8-8e7c45251ed3" />
+        <generalsInternal>
+          <generalization Id="82b0f5a6-22c1-4932-a85b-b7f4ec73c8ed" isSubstitutable="false">
+            <classMoniker Id="a5fff735-aed5-4ffe-a1df-a5d609743647" LastKnownName="ServiceOperation" />
+            <elementDefinition Id="3d595447-e1f1-41be-aaf3-07ccf99ec1d6" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="0ac20ec5-9fc4-4c25-adbe-6485f5dab45d" name="Repair" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="026341df-dac9-4e1b-9b88-64e957cf930d" />
+        <generalsInternal>
+          <generalization Id="462bf091-18b1-4f2f-b2d6-e32005800b56" isSubstitutable="false">
+            <classMoniker Id="a5fff735-aed5-4ffe-a1df-a5d609743647" LastKnownName="ServiceOperation" />
+            <elementDefinition Id="44c53a36-8ea8-4a77-8fd4-aa17dbb4bffc" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="5f6b6cc6-5473-4b55-a42c-8314de3f39ad" name="Accident" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="01b765af-8fa7-4f3c-9de9-30aea702526f" />
+        <generalsInternal>
+          <generalization Id="dcf450d0-c01e-47e2-84fb-6b11a78ed98a" isSubstitutable="false">
+            <classMoniker Id="53ed5e78-8a1a-406a-b077-c68dca3a69a7" LastKnownName="RepairCause" />
+            <elementDefinition Id="25e8f033-622d-4f4d-acb4-cb8dc1fad380" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="ead6070d-0d54-4aac-b9b0-e8383f6b3dba" isDerived="false" sourceEndRoleName="Accident" targetEndRoleName="AccidentParty" isLeaf="false" isAbstract="false">
             <classMoniker Id="473324ee-2fc7-4221-a6b1-9c746e88fbb3" LastKnownName="AccidentParty" />
@@ -853,6 +887,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="89559d17-e3f0-4a64-99be-8e92f00833c4" name="Inspection" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7370fd18-a33b-4778-90df-7f0d4ad2dbd8" />
+        <generalsInternal>
+          <generalization Id="31d79f0a-9ae1-4818-81c8-4142040a3caf" isSubstitutable="false">
+            <classMoniker Id="53ed5e78-8a1a-406a-b077-c68dca3a69a7" LastKnownName="RepairCause" />
+            <elementDefinition Id="2858f08e-c176-4bd1-92a3-3632cc79a62a" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="3a0c7405-9080-4db3-8bc5-aec0db5ec7f0" name="Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="80ae60e4-1588-444c-a6e7-47bb3a8e9622" />
@@ -937,16 +977,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="ff6a1ce3-f4a8-48d2-a702-8cf7a23a5582" name="Party" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="918c3a1a-698b-42e8-afc7-02395992a900" />
-        <generalsInternal>
-          <generalization Id="c78b9b8c-8f75-4108-a643-e6dc1f7a3db0" isSubstitutable="false">
-            <classMoniker Id="20884208-b841-46a6-a2f6-3433ebd11432" LastKnownName="Person" />
-            <elementDefinition Id="1f6f8364-2d5f-464a-b171-19d9d226e6c1" />
-          </generalization>
-          <generalization Id="0d33ea09-8d3c-45af-9ac5-6b37adbb1a26" isSubstitutable="false">
-            <classMoniker Id="f4dc6e6e-93bb-4500-a594-443117e6b410" LastKnownName="Vehicle" />
-            <elementDefinition Id="00e34b91-9acd-4ffd-977e-5928c3bb5880" />
-          </generalization>
-        </generalsInternal>
         <targetEnds>
           <association Id="8ee4be79-b28a-4964-9b79-76e8c05e8ac4" isDerived="false" sourceEndRoleName="Party" targetEndRoleName="AccidentParty" isLeaf="false" isAbstract="false">
             <classMoniker Id="473324ee-2fc7-4221-a6b1-9c746e88fbb3" LastKnownName="AccidentParty" />
@@ -1001,16 +1031,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="53ed5e78-8a1a-406a-b077-c68dca3a69a7" name="RepairCause" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="645e5f47-cc66-4e14-9152-cb409ef512f6" />
-        <generalsInternal>
-          <generalization Id="42d0a953-30e5-4988-acf9-1f78229ac655" isSubstitutable="false">
-            <classMoniker Id="89559d17-e3f0-4a64-99be-8e92f00833c4" LastKnownName="Inspection" />
-            <elementDefinition Id="9a892fdc-f165-4f66-80ad-17351a0d485e" />
-          </generalization>
-          <generalization Id="37c66c1b-f2df-461f-8fed-bd33d5f66526" isSubstitutable="false">
-            <classMoniker Id="5f6b6cc6-5473-4b55-a42c-8314de3f39ad" LastKnownName="Accident" />
-            <elementDefinition Id="54cf3c14-69c6-48fe-9828-a77a882794fd" />
-          </generalization>
-        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

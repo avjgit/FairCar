@@ -43,6 +43,13 @@
       <SubType>Content</SubType>
       <DependentUpon>ClassPSM.classdiagram</DependentUpon>
     </Content>
+    <Content Include="SequenceDiagramSearching.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagramSearching.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagramSearching.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="UsecaseBuying.usecasediagram">
       <SubType>Content</SubType>
     </Content>
