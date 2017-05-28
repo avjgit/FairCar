@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairCar", "FairCar\FairCar.csproj", "{B026FC5C-035A-490B-A457-221B6BC4269A}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "UMLModel", "UMLModel\UMLModel.modelproj", "{E6BDE5EB-9495-40F5-83A4-B0144A561C34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMLModelLib", "UMLModelLib\UMLModelLib.csproj", "{BE398928-4C2B-42A1-A7AC-77D81BE208FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B026FC5C-035A-490B-A457-221B6BC4269A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B026FC5C-035A-490B-A457-221B6BC4269A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B026FC5C-035A-490B-A457-221B6BC4269A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BDE5EB-9495-40F5-83A4-B0144A561C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BDE5EB-9495-40F5-83A4-B0144A561C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BDE5EB-9495-40F5-83A4-B0144A561C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BDE5EB-9495-40F5-83A4-B0144A561C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE398928-4C2B-42A1-A7AC-77D81BE208FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE398928-4C2B-42A1-A7AC-77D81BE208FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE398928-4C2B-42A1-A7AC-77D81BE208FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE398928-4C2B-42A1-A7AC-77D81BE208FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

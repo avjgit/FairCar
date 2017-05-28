@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cde7aab5-c6db-4328-9a9e-87f3abd754f2" name="BusinessUsecases" linkedPackageId="9e568c46-1938-44e8-988a-489662aabbf5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="b0e59fb7-3efd-450c-ac41-04416ff214c4">
+      <profileInstance Id="019f5f10-605f-44a3-9c68-659b69b22c3e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="38ec3095-6a37-40d8-b289-df982f3f357c">
+      <profileInstance Id="9f48cc70-8d3c-4e3f-8835-30b056d1f0e8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9e4fbf6d-2184-451f-9ce0-38549c11159d" name="Buyer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11622b88-a801-4930-93d0-724613fd399c" />
+        <targetEnds>
+          <association Id="8375e4e0-13b9-459c-a337-450618e13932" isDerived="false" sourceEndRoleName="Buyer" targetEndRoleName="Buy a vehicle" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0d7529aa-7545-4dd5-ba32-39525bce8565" LastKnownName="Buy a vehicle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5de814ac-a020-4a6c-b9f4-dac0543aabfb" name="Buyer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f35fe959-401d-493a-8abf-aa22166b3c7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3df9cc8-a3e1-474c-9fcf-1606b051e045" name="Buy a vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0784b809-bdd5-475b-9630-d1cda2465214" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="045f220f-69cc-4fa4-b33d-cdba6bff16aa" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0d7529aa-7545-4dd5-ba32-39525bce8565" name="Buy a vehicle" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03d6bbd5-5c03-4087-a92f-e8ef2a1e6e5a" />
+        <additions>
+          <include Id="e8562836-e0f0-40cc-b81a-a1f4a2e092f7">
+            <useCaseMoniker Id="cc3db80a-7b87-4790-a608-d5525fa30805" LastKnownName="Send an offer" />
+            <elementDefinition Id="2dda73bd-2dff-4913-b77a-0db2f0c47bdd" />
+          </include>
+          <include Id="5064d25c-4a1b-484a-981f-c84fffde4458">
+            <useCaseMoniker Id="f547e566-a0e5-48ad-987d-495832813ef7" LastKnownName="Change ownership" />
+            <elementDefinition Id="5a8fb033-00f5-44da-b632-e48d26b3a336" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6f924508-88cb-480b-96e8-0b40d6f5ce20" name="Sell a vehicle" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="01917b56-a29c-4430-ac57-b2042e768895" />
+        <suppliersInternal>
+          <dependency Id="7ff518c4-6132-446e-a0ee-3e1d76ee2cf9">
+            <useCaseMoniker Id="e57d69d9-191d-46bc-80b6-52d5474960d1" LastKnownName="Accept an offer" />
+            <elementDefinition Id="0c884fb6-2580-4efe-be9b-fac9273033da" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="79a8fb97-cd88-4527-9f8b-98184ccc641d">
+            <useCaseMoniker Id="8d57467f-83a8-4769-9fbf-0b989b1336bc" LastKnownName="Publish advertisement" />
+            <elementDefinition Id="e58c64cb-d3ca-4e0b-aa47-d6f3f2933805" />
+          </include>
+          <include Id="905108d2-d197-4d46-bd0d-fe2abd3b2a44">
+            <useCaseMoniker Id="f547e566-a0e5-48ad-987d-495832813ef7" LastKnownName="Change ownership" />
+            <elementDefinition Id="5452eeb4-6908-4676-988a-29945d9f9766" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8d57467f-83a8-4769-9fbf-0b989b1336bc" name="Publish advertisement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ac9787a8-7485-4c7e-a731-9a6c15f0c03b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cc3db80a-7b87-4790-a608-d5525fa30805" name="Send an offer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="acbdd691-73a1-48b0-b3c0-9da6db10e2f2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f547e566-a0e5-48ad-987d-495832813ef7" name="Change ownership" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d5b014bb-320e-4f90-850d-a76a3747971b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="fbd37403-a8ee-4688-8634-d326967adf9e" name="Seller" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74415a1d-12f5-4fbf-b20e-4ca584bd0532" />
+        <targetEnds>
+          <association Id="5d514432-cfc9-425a-b98f-8e4aac6dca70" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="Sell a vehicle" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6f924508-88cb-480b-96e8-0b40d6f5ce20" LastKnownName="Sell a vehicle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69cf2854-a98a-4dfd-9d88-75039e1523ec" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4d2ebd18-0aad-44b8-ae8d-9c475e4c39dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb3429e3-280a-41eb-9928-64a79458dae2" name="Sell a vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0de32187-e8eb-4fc0-a101-7f2d2033bf8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b679aa03-8174-4cc0-8e19-e7fa5b44dbf6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e57d69d9-191d-46bc-80b6-52d5474960d1" name="Accept an offer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eedbc3e7-b15d-4f09-bcaf-5548a40eece8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c153dfa2-6426-40ad-9095-abc36d6ec520" name="Owner" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a9b1ee5-447e-44d2-9fb9-988f47e528d5" />
+        <targetEnds>
+          <association Id="5851d6e3-c197-4697-99a2-586a87449bac" isDerived="false" sourceEndRoleName="Owner" targetEndRoleName="Perform planned maintenance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ccc29507-4016-4d34-88ed-ed01fd15356c" LastKnownName="Perform service" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7759102-8f35-4e9d-bd88-06e9650726de" name="Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b3f4eeb0-0a6a-4896-9b65-af440dd9c975" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f26c794a-3cb1-4193-baab-24f97c1c5ae8" name="Perform planned maintenance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ff222de7-1912-4c05-8309-2b8b97a7768c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea81a49f-7312-4d53-b82e-e1f007a20225" />
+          </association>
+          <association Id="7bd22425-6b9d-4cc5-beeb-325e106a76f8" isDerived="false" sourceEndRoleName="Owner" targetEndRoleName="Perform inspection" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9692280b-815b-4e1e-984a-999a44f33522" LastKnownName="Perform inspection" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9fe6243-8329-4275-a231-913a29465d96" name="Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2adf3105-148b-46ee-94a9-9864d72fb886" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f192ab6e-7acb-480f-883d-bb083598fef9" name="Perform inspection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="93e258a3-00ad-48a6-9988-455c0af8754c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="059af6ae-9a8f-4849-a7af-2909b0408959" />
+          </association>
+          <association Id="4c46ca03-5ca9-484b-a83a-2b35bde741d0" isDerived="false" sourceEndRoleName="Owner" targetEndRoleName="Perform inspection1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c7f5132e-ec8b-4208-8532-3100f0df5066" LastKnownName="Have an accident" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3aabbf0a-14fa-47d1-a917-fdcd07ea1795" name="Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8052de64-bbed-4995-8477-0d22c542f998" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8d90b40-f008-47e6-a456-fc585e7b1b62" name="Perform inspection1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13ddc4bd-c45a-4ae1-865a-99746bd82e0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d1194012-3e01-4fab-826b-117f81de2e45" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2c0b4e5d-66c7-48f9-84b9-088563fb2bf7" name="Service Centre" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec98f7f8-2bf0-4f3b-97fa-70976d56dc1c" />
+        <targetEnds>
+          <association Id="0ed74805-5e6e-430f-9a0f-bfd77b469c9a" isDerived="false" sourceEndRoleName="ServiceCenter" targetEndRoleName="Perform planned maintenance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ccc29507-4016-4d34-88ed-ed01fd15356c" LastKnownName="Perform service" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="398c7101-ebc8-43ce-b816-6c7f6eeb2194" name="ServiceCenter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06596fec-f087-4091-8213-b7f10aae4f5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57896864-de44-43cd-8622-354146380f57" name="Perform planned maintenance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a0358445-ea17-408d-ae97-947566f57181" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0602e714-8c54-40e0-8c72-74f77d3adfba" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ccc29507-4016-4d34-88ed-ed01fd15356c" name="Perform service" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6301e7d9-06d7-40d9-9b71-b09242684735" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c9408964-3b0d-4d52-81d5-9206b07fb7f9" name="Authority" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c25f493b-9e47-4706-9804-cddf23494137" />
+        <targetEnds>
+          <association Id="b8b59d53-48b6-4e63-9831-c065476a9411" isDerived="false" sourceEndRoleName="Authority" targetEndRoleName="Perform inspection" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9692280b-815b-4e1e-984a-999a44f33522" LastKnownName="Perform inspection" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d9f23bf-d98e-45d3-b552-f89f4a530de3" name="Authority" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="08735af2-b5fc-48b0-8568-4a7b499e153d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a643d1a-f1ba-4a59-928d-5ab2af44b5c0" name="Perform inspection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="133766f1-0b24-40f7-9f26-7ab5d32507cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e402473f-d89c-4eaf-a343-ae8dcf0d0350" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9692280b-815b-4e1e-984a-999a44f33522" name="Perform inspection" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40574979-1e08-4b15-8fe2-d51f7bb0f8f4" />
+        <suppliersInternal>
+          <dependency Id="d2721381-e7d6-420a-94f0-996c69df1d29">
+            <useCaseMoniker Id="ccc29507-4016-4d34-88ed-ed01fd15356c" LastKnownName="Perform service" />
+            <elementDefinition Id="5cacb32d-e44b-4cfd-a3fc-599e6c6a2bef" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ef91d5f7-f254-442a-8b7c-63bcd0e9df4d" name="Other owner" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="986876e8-a96b-47df-bb6f-ca16e89eb44e" />
+        <targetEnds>
+          <association Id="f18f82b8-420b-42ca-b4e4-f11d222be1ef" isDerived="false" sourceEndRoleName="Other owner" targetEndRoleName="Perform inspection1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c7f5132e-ec8b-4208-8532-3100f0df5066" LastKnownName="Have an accident" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4ebde0a-a759-4036-a15b-96f6ed408b21" name="Other owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4d8135c2-fc7a-4d89-a776-19e011157910" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07f873ec-cff8-4ac4-9747-270680ffd990" name="Perform inspection1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="25d22b6b-6861-4280-8900-0d330ada505c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab04f028-77b5-46ee-894b-2598a82c3dd2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c7f5132e-ec8b-4208-8532-3100f0df5066" name="Have an accident" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6fec608f-a5ac-4d65-85e0-ce9273100f82" />
+        <suppliersInternal>
+          <dependency Id="81e59591-590d-4cfd-85d2-2bd97fd9222f">
+            <useCaseMoniker Id="ccc29507-4016-4d34-88ed-ed01fd15356c" LastKnownName="Perform service" />
+            <elementDefinition Id="51d26318-3ad3-40dd-8e74-066a9c6eaa02" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="d9684890-6035-48c6-ba3d-da058ddfb787">
+            <useCaseMoniker Id="3a57b9d7-d3df-48a6-95a8-eced536d559f" LastKnownName="Claim insurance" />
+            <elementDefinition Id="dd80045e-f8b9-45f4-9555-c8ebfb46fc98" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3a57b9d7-d3df-48a6-95a8-eced536d559f" name="Claim insurance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f07df477-0c2a-4055-a429-eb753e6a16e9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ae43f402-749a-4e20-ac19-5637837c07b6" name="Insurer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bff1a1c3-7a7e-4a82-b350-fbc04b5013e7" />
+        <targetEnds>
+          <association Id="321c8f19-9f28-44a6-b916-3b3d8667c195" isDerived="false" sourceEndRoleName="Insurer" targetEndRoleName="Claim insurance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3a57b9d7-d3df-48a6-95a8-eced536d559f" LastKnownName="Claim insurance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e9b9458-dd74-4187-bb26-d95236bee296" name="Insurer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ee16b6e-eff8-4539-9fc6-207adc23ba30" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbb3b628-ba63-42e1-8bf1-88c36d824683" name="Claim insurance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fbdf13e7-2061-4474-a6ac-7f5607ddbdf8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cff25922-54a1-4991-a24a-e2f3aa7ff040" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9e568c46-1938-44e8-988a-489662aabbf5" name="UMLModel">
+    <elementDefinition Id="d8c82976-9d50-403d-9e3d-e18ac1e38497" />
+  </package>
+</useCaseModelRoot>

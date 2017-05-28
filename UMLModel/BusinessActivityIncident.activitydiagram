@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="fdeca0c6-ac2a-40b0-8ac7-ba2bb0b0ccb3" name="BusinessActivity" linkedPackageId="326767c6-55ff-41ee-b394-dc635187d16f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="8340a5f1-fc03-4305-aa5e-a8d7b23722b2" name="BusinessActivity" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="2b2e2bd2-d06c-40d7-b776-67cb3ad1b10c" />
+        <nodes>
+          <initialNode Id="e1adfb6f-5939-4853-8c41-fdc38ee52140" name="Initial1" isLeaf="false">
+            <elementDefinition Id="0f9757fd-89eb-4f8e-b461-d50c79f1819a" />
+            <flowNodeTargets>
+              <controlFlow Id="810dff20-cfd7-4d80-a7e1-91024aef5f5c" isLeaf="false">
+                <opaqueActionMoniker Id="32f19597-374f-4ad5-b653-98307770ce22" LastKnownName="Road accident occures" />
+                <elementDefinition Id="b726aa5c-dfb3-40f4-b899-c09c1269a51f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="d1f38c50-48ce-4156-8619-693589b48572" name="Are people injured?" isLeaf="false">
+            <elementDefinition Id="a8d77325-3477-4622-b8b0-44268127829b" />
+            <flowNodeTargets>
+              <controlFlow Id="38ed6a4e-17d5-43c1-acae-9e197a71e503" isLeaf="false">
+                <decisionNodeMoniker Id="2d064000-23b6-44f9-96ba-1e5c421bc09b" LastKnownName="Decision11" />
+                <elementDefinition Id="77ddd1c0-fda6-49fc-a18e-62447db257f7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="2d064000-23b6-44f9-96ba-1e5c421bc09b" name="Decision11" isLeaf="false">
+            <elementDefinition Id="9a1b4abb-e019-475b-aa9d-a6526b02f196" />
+            <flowNodeTargets>
+              <controlFlow Id="3b4394dc-65c9-46a9-9504-5bf1ec708af0" guard="no" isLeaf="false">
+                <opaqueActionMoniker Id="945e5adf-966d-45d3-bd7f-6ebe54cefdd8" LastKnownName="Is car or liability insured?" />
+                <elementDefinition Id="e38b8a2e-b5af-4d6a-baf4-3491bf104564" />
+              </controlFlow>
+              <controlFlow Id="05f35df5-1b76-49fa-ac6a-ff9a9e5fa580" guard="yes" isLeaf="false">
+                <opaqueActionMoniker Id="e00e7dcb-093e-47f5-82f9-3abf38405eb0" LastKnownName="Inform Police" />
+                <elementDefinition Id="ecdbd2e9-c2c4-4244-bbb3-dd0f71099b63" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="945e5adf-966d-45d3-bd7f-6ebe54cefdd8" name="Is car or liability insured?" isLeaf="false">
+            <elementDefinition Id="4ab1ab55-68e4-4be5-8282-bb1ac661eafc" />
+            <flowNodeTargets>
+              <controlFlow Id="ff0abf26-b808-4476-a25b-515fe6847e35" isLeaf="false">
+                <decisionNodeMoniker Id="3b170f39-d766-4ab8-9c6d-0d58ca57ed49" LastKnownName="Decision112" />
+                <elementDefinition Id="e1ed90ed-aa5d-4be7-b4c7-2ab2d9fcc5cb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="32f19597-374f-4ad5-b653-98307770ce22" name="Road accident occures" isLeaf="false">
+            <elementDefinition Id="72b202d6-ed3c-4ce7-a003-d7da269370d3" />
+            <flowNodeTargets>
+              <controlFlow Id="ca690bc3-a66f-49f4-b86b-20deef539575" isLeaf="false">
+                <opaqueActionMoniker Id="d1f38c50-48ce-4156-8619-693589b48572" LastKnownName="Are people injured?" />
+                <elementDefinition Id="f1fa7c91-1797-4627-9f12-58fd5aee268f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e00e7dcb-093e-47f5-82f9-3abf38405eb0" name="Inform Police" isLeaf="false">
+            <elementDefinition Id="c5f35f18-03c2-409b-8c0f-bc3ecfae4124" />
+            <flowNodeTargets>
+              <controlFlow Id="75f08e97-8dee-43ec-bd80-98fc36a7385f" isLeaf="false">
+                <opaqueActionMoniker Id="945e5adf-966d-45d3-bd7f-6ebe54cefdd8" LastKnownName="Is car or liability insured?" />
+                <elementDefinition Id="dd027dae-0e94-4a70-86ba-601d25fb3fa2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="3b170f39-d766-4ab8-9c6d-0d58ca57ed49" name="Decision112" isLeaf="false">
+            <elementDefinition Id="c68d70f3-9464-452f-b794-87d20529a9ce" />
+            <flowNodeTargets>
+              <controlFlow Id="2a33247e-826d-4817-a0e5-8afb6308fad9" guard="yes" isLeaf="false">
+                <opaqueActionMoniker Id="a379c7b3-ea69-42c5-a0ca-5ad22c5018c9" LastKnownName="Submit claim to insurer" />
+                <elementDefinition Id="fb50987f-443b-49b4-9252-589211f5c227" />
+              </controlFlow>
+              <controlFlow Id="3f34d895-16d7-4789-a662-a15060db2f5c" guard="no" isLeaf="false">
+                <opaqueActionMoniker Id="f23fa600-99b1-47b1-9024-2cce72d1e1ac" LastKnownName="Is repairement required?" />
+                <elementDefinition Id="6a800fbe-ef42-4f65-acd5-6eb3da69e0a2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="a379c7b3-ea69-42c5-a0ca-5ad22c5018c9" name="Submit claim to insurer" isLeaf="false">
+            <elementDefinition Id="4c056da8-c6ea-4f58-a3af-2b2355e75ec6" />
+            <flowNodeTargets>
+              <controlFlow Id="297eb608-23a5-4f04-81a6-2a1b57eecc17" isLeaf="false">
+                <opaqueActionMoniker Id="f23fa600-99b1-47b1-9024-2cce72d1e1ac" LastKnownName="Is repairement required?" />
+                <elementDefinition Id="d71121df-bb7e-47d5-9420-b2fd61eb37ca" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f23fa600-99b1-47b1-9024-2cce72d1e1ac" name="Is repairement required?" isLeaf="false">
+            <elementDefinition Id="74944199-a0d8-404d-afb5-fbe63bdb586b" />
+            <flowNodeTargets>
+              <controlFlow Id="aa807e74-2d0b-41c5-a524-1247b6276f05" isLeaf="false">
+                <decisionNodeMoniker Id="866bf8e2-0a75-4210-a10c-b0dee8c25a8c" LastKnownName="Decision1121" />
+                <elementDefinition Id="59a7471f-358d-48c6-b49e-531d359d827e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="866bf8e2-0a75-4210-a10c-b0dee8c25a8c" name="Decision1121" isLeaf="false">
+            <elementDefinition Id="32826e6d-66e7-4251-bf9f-5ec36517c0b0" />
+            <flowNodeTargets>
+              <controlFlow Id="7b76c15e-e8b8-455e-9b85-1d7cd612937c" guard="yes" isLeaf="false">
+                <opaqueActionMoniker Id="8ccb67bf-6ace-434a-8cf3-ee8a6c18ce66" LastKnownName="Submit claim to insurer1" />
+                <elementDefinition Id="007f404a-f9a0-44b5-870e-615db0aef052" />
+              </controlFlow>
+              <controlFlow Id="936162b6-363a-4bcf-bd52-355827f7eed1" guard="no" isLeaf="false">
+                <activityFinalNodeMoniker Id="225e3a09-2490-4331-a77d-c1f74390fcdd" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="58825f24-f932-4dd6-bb5c-5393d89fd37f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="8ccb67bf-6ace-434a-8cf3-ee8a6c18ce66" name="Submit claim to insurer1" isLeaf="false">
+            <elementDefinition Id="6669ad66-9199-406e-bf00-e6c0e55db835" />
+            <flowNodeTargets>
+              <controlFlow Id="5396ce22-b6c9-4056-92d5-b8b4f0938edd" isLeaf="false">
+                <activityFinalNodeMoniker Id="225e3a09-2490-4331-a77d-c1f74390fcdd" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="304fdd38-c630-49d9-b7a2-37d93b318593" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="225e3a09-2490-4331-a77d-c1f74390fcdd" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="655f06c6-5401-403e-bf40-414be004a3e4" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="326767c6-55ff-41ee-b394-dc635187d16f" name="UMLModel">
+    <elementDefinition Id="d8c82976-9d50-403d-9e3d-e18ac1e38497" />
+    <profileInstances>
+      <packageHasProfileInstances Id="311bf57c-d34a-4ee1-aaa1-65746b3dceaa">
+        <profileInstance Id="32732bb5-d325-4412-bb68-321e0c64dd8b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6bdf431a-ace8-4a5c-8553-c11a758bf67b">
+        <profileInstance Id="0b85ca1f-8f47-4716-89d5-69ba1f795277" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

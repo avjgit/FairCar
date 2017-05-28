@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="55e64958-7c30-4880-89e6-db1dd52a62dc" name="UsecaseAccident" linkedPackageId="36dc4bef-a95e-48b4-aae7-27c32420369e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="55f836cf-714e-45f8-8cb4-0dcb06680f50">
+      <profileInstance Id="52074fa5-82c2-4f75-a843-5d83b8550630" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="987ddad9-f861-4ff2-b2d3-0333cec4f426">
+      <profileInstance Id="8fd387ef-f76b-4cb4-91bf-f2710d2f5a1c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f32a628f-95da-43d8-aef3-f655f9e8e2b1" name="Buyer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec7ba46f-64f6-4cce-b4ce-dbf9a1c4f42e" />
+        <targetEnds>
+          <association Id="1d12e947-b8a8-434a-bf25-a85e64b63ed9" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="84e77296-717c-46f2-ae5a-4b97a7f10d3c" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04172ff7-f8f6-4f51-850e-390abf1c6a0d" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="054bac43-4cc1-4395-b4f1-063a676901c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02e651df-2651-46a0-8fd8-822c6018eb85" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d407dd8d-465f-4215-89a6-401abfeea0f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a73d4e46-7f41-4c76-b639-14a21a0cc996" />
+          </association>
+          <association Id="bb2edba2-23b2-4ae3-ad2d-03cd2d01a02c" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Search Vehicles" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4827638a-1a70-4141-910c-29a0a2d5c4cd" LastKnownName="Search Vehicles" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="114f335a-6392-47bf-9793-db7cd7e498fc" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7610e76-fe12-47eb-9d12-0307082f9181" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c0ce81e-5088-47aa-94e0-32a370e9de50" name="Search Vehicles" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7e415614-221d-4749-9acb-b214b64aeacc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f8cc51b-602f-4de8-927c-a95e881c076e" />
+          </association>
+          <association Id="67296763-dd91-481b-b89d-e77432343e56" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Send offer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1f8a1d53-7c62-4903-8448-c5c2d93d5b51" LastKnownName="Send message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9b532fe-e9c5-41cd-8fa7-7eba6426ddf4" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="086b8864-446c-4c87-ba07-b5961c9e7459" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4e010c5-b152-47b1-b363-fa37daa289eb" name="Send offer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2316008-4507-4359-9af8-9306effc2486" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fdca97a0-4a0d-4414-9af5-e0d5225fd842" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="84e77296-717c-46f2-ae5a-4b97a7f10d3c" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0c8eeec-7a65-4302-8716-4fab651c602c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4827638a-1a70-4141-910c-29a0a2d5c4cd" name="Search Vehicles" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="edf13b59-5f56-48b5-910c-670474ca9226" />
+        <additions>
+          <include Id="44099d64-5718-4b36-9609-d77875930b20">
+            <useCaseMoniker Id="4949b1ed-b84e-49c5-9bfa-b5f85cdbe370" LastKnownName="Filter out vehicles" />
+            <elementDefinition Id="fda10f28-fcda-49a6-8a76-1e4b0f06c018" />
+          </include>
+          <include Id="70354a92-6ad9-4ebd-95f8-ae6d5ba34dea">
+            <useCaseMoniker Id="2d2d066b-c8bf-4647-9efc-79ecec97f3ef" LastKnownName="Select from results list" />
+            <elementDefinition Id="ceeffad4-a0cc-4025-aaaa-cf9c336c2e22" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4949b1ed-b84e-49c5-9bfa-b5f85cdbe370" name="Filter out vehicles" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2440075-fc1c-46f5-ad20-2b2431b762b4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2d2d066b-c8bf-4647-9efc-79ecec97f3ef" name="Select from results list" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54b03c9a-0f16-4cc1-a3b7-000b3946065d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1f7b20f4-0be3-42d0-a983-ef0d73649fd3" name="View vehicle history" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c16436c-1d1c-43d1-844f-b935a361da75" />
+        <extendedCases>
+          <extend Id="3799e27d-629a-4033-b8c7-02f245da6cc5">
+            <useCaseMoniker Id="2d2d066b-c8bf-4647-9efc-79ecec97f3ef" LastKnownName="Select from results list" />
+            <elementDefinition Id="a4ea69db-a22e-4a56-a11c-d5d0cd35e5a4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1f8a1d53-7c62-4903-8448-c5c2d93d5b51" name="Send message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c784d1b2-a66f-4ea3-9416-4f5d565badcb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="31b35d4e-ca75-42c8-8f3e-3466e8d77930" name="Send meeting request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d90816a-bbbe-466b-9a09-eff701e48b41" />
+        <extendedCases>
+          <extend Id="6878fdbd-07b1-46f3-941a-d2abea409306">
+            <useCaseMoniker Id="1f8a1d53-7c62-4903-8448-c5c2d93d5b51" LastKnownName="Send message" />
+            <elementDefinition Id="118cf5ae-592b-4e46-a043-3cfe3003dbe1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="053889d2-57f7-4e83-bc3c-387a38ff343d" name="Send check request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2884d9a-bb36-4326-9b10-c77274894a9e" />
+        <extendedCases>
+          <extend Id="74578bde-e97f-4662-8dec-8dc3019ff3be">
+            <useCaseMoniker Id="1f8a1d53-7c62-4903-8448-c5c2d93d5b51" LastKnownName="Send message" />
+            <elementDefinition Id="2e13e995-3d6a-4844-a424-f3f745f03dd7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5efb5b02-ebd3-4f0d-9c68-f1c0b5e10bf1" name="Send buying offer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a9e7149-6886-40e9-b740-64eeb18a771f" />
+        <extendedCases>
+          <extend Id="753948b9-fe57-419f-8691-50857bd5ed8b">
+            <useCaseMoniker Id="1f8a1d53-7c62-4903-8448-c5c2d93d5b51" LastKnownName="Send message" />
+            <elementDefinition Id="7cb3380e-945b-41ee-89b0-345d974fe5dd" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="36dc4bef-a95e-48b4-aae7-27c32420369e" name="UMLModel">
+    <elementDefinition Id="d8c82976-9d50-403d-9e3d-e18ac1e38497" />
+  </package>
+</useCaseModelRoot>
