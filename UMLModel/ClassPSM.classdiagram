@@ -886,9 +886,6 @@
           <enumerationLiteral Id="555ea288-f1a6-4f0f-9577-155111cc7b0e" name="Silver">
             <elementDefinition Id="73c8d73c-16d3-4085-803f-94f112e99672" />
           </enumerationLiteral>
-          <enumerationLiteral Id="4288b780-f2de-4c68-8504-fef57bae0c37" name="...">
-            <elementDefinition Id="b7bdf19a-13b7-49b0-b8e6-cbf9576a1be4" />
-          </enumerationLiteral>
         </ownedLiterals>
       </enumeration>
     </logicalClassDesignerModelHasTypes>
@@ -904,9 +901,6 @@
           </enumerationLiteral>
           <enumerationLiteral Id="e6bdc7ae-dc3b-490d-8541-90a450c8d597" name="Limousine">
             <elementDefinition Id="1c003217-912b-468d-8153-3594971bba39" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="51ac4b61-f6a8-44a2-bc50-faa05d0bfd69" name="...">
-            <elementDefinition Id="d62cda11-a720-4d0c-a72e-de4395713c4a" />
           </enumerationLiteral>
         </ownedLiterals>
       </enumeration>
@@ -1984,6 +1978,31 @@
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <enumeration Id="cc4879cf-4543-4d3e-a48d-eaed5a9726ab" name="InspectionResult" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="01987ef0-d3c0-4775-89dd-6f92cf1184a9" name="enum" profile="CSharpProfile">
+            <elementDefinition Id="f1a4103d-f4d9-4950-a161-4cedfdbb8d0f" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="46ceceaa-9156-4668-9115-03c6b8f663ad">
+                <propertyInstance Id="ea49be63-e1e2-4a43-88c2-040f134d08fe" name="ClrAttributes">
+                  <elementDefinition Id="74c6c0cf-b357-4aa0-a43a-9e2f6a83ddc4" />
+                </propertyInstance>
+                <elementDefinition Id="baacf5b5-7e0f-4be5-8b42-136838f94cc5" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="30e65fb3-4b76-446d-8791-c70209645ddc">
+                <propertyInstance Id="5eae31de-b2b9-4592-97a7-a46d4c5ab37c" name="BaseType" value="int">
+                  <elementDefinition Id="157cb9eb-a458-4fdd-970a-216813ff4e9a" />
+                </propertyInstance>
+                <elementDefinition Id="c8cf6165-e0c4-47b8-889c-c8379ea235ad" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3aea7d20-0e9b-42d6-b20d-967a674b605e">
+                <propertyInstance Id="a19e5e43-3033-4e4e-ad53-c32648680f15" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="9467e56b-2478-4108-8588-0adc2e0a9e4b" />
+                </propertyInstance>
+                <elementDefinition Id="f5751413-970c-44f6-a6b6-abfef3e1f0e8" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
         <elementDefinition Id="57ed9de7-eb73-4164-816d-a4a646603274" />
         <ownedLiterals>
           <enumerationLiteral Id="fdef663f-6b99-494f-a10c-12f9f488c5f6" name="OK">

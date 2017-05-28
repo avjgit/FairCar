@@ -9301,9 +9301,6 @@
           <enumerationLiteral
             Id="73c8d73c-16d3-4085-803f-94f112e99672"
             name="Silver" />
-          <enumerationLiteral
-            Id="b7bdf19a-13b7-49b0-b8e6-cbf9576a1be4"
-            name="..." />
         </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
@@ -9323,9 +9320,6 @@
           <enumerationLiteral
             Id="1c003217-912b-468d-8153-3594971bba39"
             name="Limousine" />
-          <enumerationLiteral
-            Id="d62cda11-a720-4d0c-a72e-de4395713c4a"
-            name="..." />
         </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
@@ -11067,6 +11061,35 @@
         name="InspectionResult"
         isAbstract="false"
         isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f1a4103d-f4d9-4950-a161-4cedfdbb8d0f"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="baacf5b5-7e0f-4be5-8b42-136838f94cc5">
+                <propertyInstance
+                  Id="74c6c0cf-b357-4aa0-a43a-9e2f6a83ddc4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8cf6165-e0c4-47b8-889c-c8379ea235ad">
+                <propertyInstance
+                  Id="157cb9eb-a458-4fdd-970a-216813ff4e9a"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5751413-970c-44f6-a6b6-abfef3e1f0e8">
+                <propertyInstance
+                  Id="9467e56b-2478-4108-8588-0adc2e0a9e4b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
         <ownedLiterals>
           <enumerationLiteral
             Id="fd58e798-70f4-42f6-96b6-5becb6277893"
