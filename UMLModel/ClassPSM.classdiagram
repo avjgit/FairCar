@@ -248,6 +248,19 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="3266d90b-264a-41b5-93c0-4bf1570fe489" name="getRepairHistory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3b642b57-ec92-44d1-8534-9bafd7538831" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d11fc776-3e6a-4838-892d-94d779177f33" direction="Return">
+                  <elementDefinition Id="df8dc3d6-89f6-422c-a6a8-10342a594c84" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f18e0825-1af7-4725-8365-ece1dd31abd6" LastKnownName="RepairCause" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -730,6 +743,12 @@
           <property Id="02de234b-1758-4191-add7-5870cf2b43ae" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7ed294d9-d780-4c8d-95a0-511fcf7e5e09" />
           </property>
+          <property Id="8c60a23d-698b-4c06-af80-5898d4fe479d" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="682b1ab7-1bf1-4b19-9623-d1914d8fc605" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6ac24779-1fa0-48e9-9b2e-72390e0cebed" LastKnownName="InsuranceCase" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -851,7 +870,7 @@
           <enumerationLiteral Id="712e148f-cb86-49c0-904c-b9024988a918" name="Golf">
             <elementDefinition Id="fdb81fdb-5d3d-43f3-a505-b9290772c817" />
           </enumerationLiteral>
-          <enumerationLiteral Id="bd2a331b-665c-4264-bc22-7373ca5bbd7b" name="...">
+          <enumerationLiteral Id="bd2a331b-665c-4264-bc22-7373ca5bbd7b" name="ManyMore">
             <elementDefinition Id="c1efa32d-9648-4484-9e7b-a6448d102127" />
           </enumerationLiteral>
         </ownedLiterals>
@@ -2197,6 +2216,16 @@
     <packageHasNamedElement>
       <referencedType Id="4aba5017-9a67-42c6-b945-00fe2fb7f6bb" name="InspectionResult" isAbstract="false" isLeaf="false" cachedFullName="UMLModel::InspectionResult">
         <elementDefinition Id="57ed9de7-eb73-4164-816d-a4a646603274" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6ac24779-1fa0-48e9-9b2e-72390e0cebed" name="InsuranceCase" isAbstract="false" isLeaf="false" cachedFullName="UMLModel::InsuranceCase">
+        <elementDefinition Id="59dd3890-5508-4513-acf3-332b989f7065" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f18e0825-1af7-4725-8365-ece1dd31abd6" name="RepairCause" isAbstract="false" isLeaf="false" cachedFullName="UMLModel::RepairCause">
+        <elementDefinition Id="5bf48b02-6a85-45ad-a6f5-3ea4c297c21f" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

@@ -8183,6 +8183,29 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="3b642b57-ec92-44d1-8534-9bafd7538831"
+            name="getRepairHistory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df8dc3d6-89f6-422c-a6a8-10342a594c84"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5bf48b02-6a85-45ad-a6f5-3ea4c297c21f"
+                      LastKnownName="RepairCause"
+                      LastKnownLocation="UMLModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -8993,6 +9016,23 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="682b1ab7-1bf1-4b19-9623-d1914d8fc605"
+            name="Type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="59dd3890-5508-4513-acf3-332b989f7065"
+                LastKnownName="InsuranceCase"
+                LastKnownLocation="UMLModel.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -9214,7 +9254,7 @@
             name="Golf" />
           <enumerationLiteral
             Id="c1efa32d-9648-4484-9e7b-a6448d102127"
-            name="..." />
+            name="ManyMore" />
         </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
