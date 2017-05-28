@@ -10404,24 +10404,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="86a583aa-3d04-4689-af1c-84f0e656baff"
-            name="Result"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <enumerationMoniker
-                Id="57ed9de7-eb73-4164-816d-a4a646603274"
-                LastKnownName="InspectionResult"
-                LastKnownLocation="UMLModel.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="45f20c2d-99ff-4fa4-964d-0a68c064c8dc"
             name="isRepeated"
             isLeaf="false"
@@ -10440,6 +10422,31 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="299d0284-eb72-4765-b883-c67cce841fbb"
+            name="DoCheck"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a0b6b48-09e0-4972-9809-af6033a32cff"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="57ed9de7-eb73-4164-816d-a4a646603274"
+                      LastKnownName="InspectionResult"
+                      LastKnownLocation="UMLModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -11146,6 +11153,104 @@
       <undefinedType
         Id="6eea12ea-7a61-4a84-a725-210bd5e422af"
         name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d27231a8-c5b2-49e3-bf5e-e705e52e6f17"
+        name="TradingPlatform"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="24f2421a-4ee2-406a-ad25-3ccf1dfb4d24"
+            name="logon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="effb2408-6530-4421-a721-945931bc1280"
+                  name="username"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="UMLModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="130a3ac6-b9eb-40ba-9d0a-80957b20cd84"
+                  name="password"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="UMLModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9c8d5f9b-d5de-4729-87a6-37418a05b9cb"
+            name="searchVehicles"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20d6e9a0-2597-4dca-b9ec-6f7e97a97fa6"
+                  direction="Return"
+                  isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="91bbeb73-ab60-4610-ac1b-5d48197c8f2c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="aa60c2c2-4234-4f58-bf04-82aaa6269805"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3b2c0087-02ec-46b8-b0d9-7af52b3bfdd9"
+                      LastKnownName="Vehicle"
+                      LastKnownLocation="UMLModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="42af380d-0fb5-4c28-8fd2-5e0a6671cd70"
+                  name="searchParams"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="UMLModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
